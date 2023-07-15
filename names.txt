@@ -369,7 +369,9 @@ ELF, CHILD ELF, FEMALE ADULT ELF, FEMALE ADULT ELF, MALE ADULT
 95-96 Von 59-60 Malquis 25-26 Dayereth 95-96 Uthemar 
 97-98 Wil 61-62 Meriele 27-28 Dreali 97-98 Vanuath 
 99-00 Za 63-64 Mialee 29-30 Efferil 99-00 Var is 
+
 65-66 Myathethil 31-32 Eiravel 
+
 ELF, FEMALE ADULT 67-68 Naivara 33-34 Enialis ELF, FAMILY 
 dlOO Name 69-70 Quelenna 35-36 Erdan dlOO Name 
 01-02 Adrie 71-72 Quillathe 37-38 Erevan 01-02 Aloro 
@@ -383,6 +385,7 @@ dlOO Name 69-70 Quelenna 35-36 Erdan dlOO Name
 17-18 Bethrynna 87-88 Thiala 53-54 lmmeral 17-18 Casilltenirra 
 19-20 Bi rel 89-90 Tiaathque 55-56 lvellios 19-20 Cithreth ~ 
 91-92 Traulam 
+
 ELF, FAMILY 
 dlOO Name 
 21-22 Dalanthan 
@@ -424,7 +427,9 @@ dlOO Name
 93-94 Withrethin 
 95-96 Xiloscient 
 97-98 Xistsrith 
-99-00 Yaeldrin GNOME , FEMALE 
+99-00 Yaeldrin 
+
+GNOME , FEMALE 
 dlOO Name 
 01-02 Abalaba 
 03-04 Bimpnottin 
@@ -476,6 +481,7 @@ dlOO Name
 95-96 Waywocket 
 97-98 Yebe 
 99-00 Zanna 
+
 GNOME, MALE 
 dlOO Name 
 01-02 Alston 
@@ -527,7 +533,9 @@ dlOO Name
 93-94 Wobbles 
 95-96 Wrenn 
 97-98 Zaffrab 
-99-00 Zook GNOME , CLAN 
+99-00 Zook 
+
+GNOME , CLAN 
 dlOO Name 
 01-02 Albaratie 
 03-04 Bafflestone 
@@ -578,7 +586,9 @@ dlOO Name
 93-94 Umbodoben 
 95-96 Waggletop 
 97-98 Welber 
-99-00 Wildwander HALFLING, FEMALE 
+99-00 Wildwander 
+
+HALFLING, FEMALE 
 dlOO Name 
 01-02 Alain 
 03-04 Andry 
@@ -587,7 +597,7 @@ dlOO Name
 09-10 Blossom 
 11-12 Bree 
 13-14 Callie 
-l 5-16 Chenna 
+15-16 Chenna 
 17-18 Cora 
 19-20 Dee 
 21-22 Dell 
@@ -629,7 +639,9 @@ l 5-16 Chenna
 93-94 Vani 
 95-96 Verna 
 97-98 Wella 
-99-00 Willow HALFLING, MALE 
+99-00 Willow 
+
+HALFLING, MALE 
 dlOO Name 
 01-02 Alton 
 03-04 Ander 
@@ -680,7 +692,9 @@ dlOO Name
 93-94 Wellby 
 95-96 Wendel 
 97-98 Wenner 
-99-00 Wes HALFLING, FAMILY 
+99-00 Wes 
+
+HALFLING, FAMILY 
 dlOO Name 
 01-02 Appleblossom 
 03-04 Bigheart 
@@ -689,7 +703,7 @@ dlOO Name
 09-10 Cherrycheeks 
 11-12 Copperkettle 
 13-14 Deephollow 
-l 5-16 Elderberry 
+l5-16 Elderberry 
 17-18 Fastfoot 
 19-20 Fatrabbit 
 21-22 Glenfellow 
@@ -731,7 +745,9 @@ l 5-16 Elderberry
 93-94 Whispermouse 
 95-96 Wildcloak 
 97-98 Wildheart 
-99-00 Wiseacre HALF-0RC, FEMALE 
+99-00 Wiseacre 
+
+HALF-0RC, FEMALE 
 dlOO Name 
 01-02 Arha 
 03-04 Baggi 
@@ -782,7 +798,8 @@ dlOO Name
 93-94 Volen 
 95-96 Vorka 
 97-98 Yevelda 
-99-00 Zagga 
+99-00 Zagga
+ 
 HALF-0RC, MALE 
 dlOO Name 
 01-02 Argran 
@@ -834,7 +851,9 @@ dlOO Name
 93-94 Varg 
 95-96 Vilberg 
 97-98 Yurk 
-99-00 Zed TIEFLING, FEMALE 
+99-00 Zed 
+
+TIEFLING, FEMALE 
 dlOO Name 
 01-02 Akta 
 03-04 Anakis 
@@ -886,6 +905,7 @@ dlOO Name
 95-96 Vapula 
 97-98 Vepar 
 99-00 Verin 
+
 TIEFLING, MALE 
 dlOO Name 
 01-02 Abad 
@@ -937,7 +957,9 @@ dlOO Name
 93-94 Vassago 
 95-96 Xappan 
 97-98 Zepar 
-99-00 Zephan TIEFLING, VIRTUE 
+99-00 Zephan 
+
+TIEFLING, VIRTUE 
 dlOO Name 
 01-02 Ambition 
 03-04 Art 
@@ -988,7 +1010,9 @@ dlOO Name
 93-94 Vice 
 95-96 Virtue 
 97-98 Weary 
-99-00 Wit HuMANNAMES 
+99-00 Wit 
+
+HuMANNAMES 
 ARABIC , FEMALE ARABIC, MALE 
 dlOO Name dlOO Name 
 01-02 Aaliyah 01-02 Abbad 
@@ -1040,7 +1064,9 @@ dlOO Name dlOO Name
 93-94 Zahra 93-94 Talib 
 95-96 Zaida 95-96 Tamir 
 97-98 Zain a 97-98 Tariq 
-99-00 Zeinab 99-00 Yazid CELTIC, FEMALE 
+99-00 Zeinab 99-00 Yazid 
+
+CELTIC, FEMALE 
 dlOO Name 
 01-02 Aife 
 03-04 Aina 
@@ -1091,7 +1117,9 @@ dlOO Name
 93-94 Ula 
 95-96 Venetia 
 97-98 Wynne 
-99-00 Yseult CELTIC, MALE 
+99-00 Yseult 
+
+CELTIC, MALE 
 dlOO Name 
 01-02 Airell 
 03-04 Airic 
@@ -1143,7 +1171,8 @@ dlOO Name
 95-96 Taliesin 
 97-98 Tiernay 
 99-00 Turi 
-I CHARACTER NAMES CHINESE, FEMALE 
+
+CHINESE, FEMALE 
 dlOO Name 
 01-02 Ai 
 03-04 Anming 
@@ -1194,7 +1223,9 @@ dlOO Name
 93-94 Ying 
 95-96 Yuan 
 97-98 Yue 
-99-00 Yun CHINESE, MALE 
+99-00 Yun 
+
+CHINESE, MALE 
 dlOO Name 
 01-02 Bingwen 
 03-04 Bo 
@@ -1245,7 +1276,9 @@ dlOO Name
 93-94 Xin 
 95-96 Yang 
 97-98 Ying 
-99-00 Zhong EGYPTIAN, FEMALE EGYPTIAN, FEMALE EGYPTIAN, MALE 
+99-00 Zhong 
+
+EGYPTIAN, FEMALE EGYPTIAN, FEMALE EGYPTIAN, MALE 
 dlOO Name dlOO Name dlOO Name 
 01-02 A'at 69-70 Nit 33-34 lmhotep 
 03-04 Ah set 71-72 No fret 35-36 lneni 
@@ -1282,6 +1315,7 @@ dlOO Name dlOO Name dlOO Name
 65-66 Neferu 27-28 Huya 97-98 Thaneni 
 67-68 Neithotep 29-30 lbebi 99-00 Thethi 
 31-32 ldu 
+
 ENGLISH, FEMALE ENGLISH , FEMALE ENGLISH, MALE 
 dlOO Name dlOO Name dlOO Name 
 01-02 Adelaide 69-70 Juliana 33-34 Gilbert 
@@ -1319,7 +1353,8 @@ dlOO Name dlOO Name dlOO Name
 65-66 Jane 27-28 Frederick 97-98 William 
 67-68 Joan 29-30 Geoffrey 99-00 Wymar 
 31-32 Gerald 
-APPEND IX BI CH1\R.ACTER NA.MES FRENCH, FEMALE 
+
+FRENCH, FEMALE 
 dlOO Name 
 01-02 Aalis 
 03-04 Agatha 
@@ -1370,7 +1405,9 @@ dlOO Name
 93-94 Stephana 
 95-96 Sybilla 
 97-98 Ysabeau 
-99-00 Ysabel FRENCH, MALE 
+99-00 Ysabel 
+
+FRENCH, MALE 
 dlOO Name 
 01-02 Ambroys 
 03-04 Ame 
@@ -1421,7 +1458,9 @@ l 5-16 Charlot
 93-94 Simon 
 95-96 Talbot 
 97-98 Tanguy 
-99-00 Vincent GERMAN, FEMALE 
+99-00 Vincent 
+
+GERMAN, FEMALE 
 dlOO Name 
 01-02 Adelhayt 
 03-04 Affra 
@@ -1472,7 +1511,9 @@ dlOO Name
 93-94 Sibilla 
 95-96 Ursel 
 97-98 Vrsula 
-99-00 Walpurg GERMAN, MALE 
+99-00 Walpurg 
+
+GERMAN, MALE 
 dlOO Name 
 01-02 Albrecht 
 03-04 Allexander 
@@ -1524,7 +1565,8 @@ dlOO Name
 95-96 Wilhelm 
 97-98 Wolff 
 99-00 Wolfgang 
-I CHARACTER NAMES GREEK, FEMALE 
+
+GREEK, FEMALE 
 dlOO Name 
 01-02 Acantha 
 03-04 Aella 
@@ -1575,7 +1617,9 @@ l 5-16 Astraea
 93-94 Phaenna 
 95-96 Polymnia 
 97-98 Semele 
-99-00 Theia GREEK, MALE 
+99-00 Theia 
+
+GREEK, MALE 
 dlOO Name 
 01-02 Adonis 
 03-04 Adrastos 
@@ -1627,7 +1671,8 @@ dlOO Name
 95-96 Pyrrhos 
 97-98 Xanthos 
 99-00 Zephyros 
-APPENDlX B I CHARACTER NAM ES INDIAN, FEMALE 
+
+INDIAN, FEMALE 
 dlOO Name 
 01-02 Abha 
 03-04 Aishwarya 
@@ -1678,7 +1723,9 @@ dlOO Name
 93-94 Tara 
 95-96 Valli 
 97-98 Vijaya 
-99-00 Vimala INDIAN, MALE 
+99-00 Vimala 
+
+INDIAN, MALE 
 dlOO Name 
 01-02 Abhay 
 03-04 Ahsan 
@@ -1729,7 +1776,9 @@ l 5-16 Ananta
 93-94 Vikram 
 95-96 Vimal 
 97-98 Vishal 
-99-00 Yash JAPANESE, FEMALE 
+99-00 Yash 
+
+JAPANESE, FEMALE 
 dlOO Name 
 01-02 Aika 
 03-04 Akemi 
@@ -1753,7 +1802,9 @@ dlOO Name
 39-40 Hikari 
 41-42 Hiroko 
 43-44 Hisoka 
-45-46 His hi JAPANESE, MALE 
+45-46 His hi 
+
+JAPANESE, MALE 
 47-48 Hotaru dlOO Name 
 49-50 Izumi 01-02 Akio JAPANESE , MALE 
 51-52 Kameyo 03-04 Ats us hi dlOO Name 
@@ -1781,7 +1832,8 @@ dlOO Name
 95-96 Usagi 47-48 Ken shin 95-96 Toshio 
 97-98 Yasuko 49-50 Kenta 97-98 Yasuo 
 99-00 Yuriko 51-52 Kioshi 99-00 Yukio 
-APPENDfX B I CHARACTER NAMES MESOAM ERICAN1 FEMALE MESOAME RICAN1 FEMALE MESOAMERICAN 1 MALE 
+
+MESOAM ERICAN1 FEMALE MESOAME RICAN1 FEMALE MESOAMERICAN 1 MALE 
 dlOO Name dlOO Name dlOO Name 
 01-02 Ahuiliztli 69-70 Papan 33-34 lccauhtli 
 03-04 Atl 71-72 Pat Ii 35-36 llhicamina 
@@ -1818,6 +1870,7 @@ dlOO Name dlOO Name dlOO Name
 65-66 Noxochicoztli 27-28 Etalpalli 97-98 Xipilli 
 67-68 Ohtli 29-30 Huemac 99-00 Yao ti 
 31-32 Huitzilihuitl 
+
 NIGER-CONGO, 
 FEMALE 
 dlOO Name 
@@ -1870,7 +1923,9 @@ dlOO Name
 93-94 Ufuoma 
 95-96 Yaa 
 97-98 Yejide 
-99-00 Yewande NIGER-CONGO, 
+99-00 Yewande 
+
+NIGER-CONGO, 
 MALE 
 dlOO Name 
 01-02 Abebe 
@@ -1922,14 +1977,15 @@ dlOO Name
 93-94 Themba 
 95-96 Uzoma 
 97-98 Zuberi 
-99-00 Zuri NORSE, FEMALE 
+99-00 Zuri 
+
+NORSE, FEMALE 
 dlOO Name 
 01-02 Alfhild 
 03-04 Arnbjorg 
 05-06 Ase 
 07-08 Aslog 
-09-10 Astr
-id 
+09-10 Astrid 
 11-12 Auda 
 13-14 Audhid 
 15-16 Bergljot 
@@ -1974,7 +2030,9 @@ id
 93-94 Unn 
 95-96 Vigdis 
 97-98 Ylva 
-99-00 Yngvild NORSE, MALE 
+99-00 Yngvild 
+
+NORSE, MALE 
 dlOO Name 
 01-02 Agni 
 03-04 Alaric 
@@ -2026,8 +2084,8 @@ dlOO Name
 95-96 Ulf 
 97-98 Vali 
 99-00 Vidar 
-I CHARACTER NAMES POLYNESIAN , 
-FEMALE 
+
+POLYNESIAN , FEMALE 
 dlOO Name 
 01-02 Ahulani 
 03-04 Airini 
@@ -2078,7 +2136,9 @@ dlOO Name
 93-94 Uluwehi 
 95-96 Vaina 
 97-98 Waiola 
-99-00 Waitara POLYNESIAN, MALE 
+99-00 Waitara 
+
+POLYNESIAN, MALE 
 dlOO Name 
 01-02 Afa 
 03-04 Ahohako 
@@ -2130,6 +2190,7 @@ dlOO Name
 95-96 Waata 
 97-98 Waipuna 
 99-00 Zamar 
+
 ROMAN, FEMALE 
 dlOO Name 
 01-02 Aelia 
@@ -2181,7 +2242,9 @@ dlOO Name
 93-94 Tacita 
 95-96 Tullia 
 97-98 Verginia 
-99-00 Vita ROMAN, MALE 
+99-00 Vita 
+
+ROMAN, MALE 
 dlOO Name 
 01-02 Aelius 
 03-04 Aetius 
@@ -2232,7 +2295,9 @@ dlOO Name
 93-94 Regulus 
 95-96 Servius 
 97-98 Tacitus 
-99-00 Varius SLAVIC, FEMALE SLAVIC, MALE 
+99-00 Varius 
+
+SLAVIC, FEMALE SLAVIC, MALE 
 dlOO Name dlOO Name 
 01-02 Agripina 01-02 Aleksandru 
 03-04 Anastasiya 03-04 Berislav 
@@ -2284,6 +2349,7 @@ dlOO Name dlOO Name
 95-96 Zaria 95-96 Yarognev 
 97-98 Zarya 97-98 Yaromir 
 99-00 Zoria 99-00 Zbignev 
+
 SPANISH, FEMALE SPANISH, FEMALE SPANISH, MALE 
 dlOO Name dlOO Name dlOO Name 
 01-02 Abella 69-70 Melania 33-34 Escobar 
