@@ -345,49 +345,150 @@ dlOO Name
 49-50 Mai 
 51-52 Mara 
 53-54 Mella 
-55-56 Mya 
-ELF, CHILD ELF, FEMALE ADULT ELF, FEMALE ADULT ELF, MALE ADULT 
-57-58 Naeris 21-22 Caelynn 93-94 Vadania 57-58 Korfel 
-59-60 Naill 23-24 Chaedi 95-96 Va Ianthe 59-60 Lamlis 
-61-62 Nim 25-26 Claira 97-98 Vain a 61-62 Laucian 
-63-64 Phann 27-28 Dara 99-00 Xanaphia 63-64 Lucan 
-65-66 Py 29-30 Drusilia 65-66 Mindartis 
-67-68 Rael 31-32 Ela ma ELF, MALE ADULT 67-68 Naal 
-69-70 Raer 33-34 Enna dlOO Name 69-70 Nutae 
-71-72 Ren 35-36 Fara I 01-02 Adran 71-72 Paelias 
-73-74 Rinn 37-38 Felosial 03-04 Aelar 73-74 Peren 
-75-76 Rua 39-40 Hatae 05-06 Aerdeth 75-76 Quarion 
-77-78 Sae I 41-42 lelenia 07-08 Ahvain 77-78 Riardon 
-79-80 Sai 43-44 llanis 09-10 Aramil 79-80 Rolen 
-81-82 Sumi 45-46 lrann 11-12 Arannis 81-82 Soveliss 
-83-84 Syllin 47-48 Jarsali 13-14 Aust 83-84 Suhnae 
-85-86 Ta 49-50 jelenneth 15-16 Azaki 85-86 Thamior 
-87-88 Thia 51-52 Keyleth 17-18 Beiro 87-88 Tharivol 
-89-90 Tia 53-54 Leshanna 19-20 Berrian 89-90 Theren 
-91-92 Traki 55-56 Lia 21-22 Caeldrim 91-92 Theriatis 
-93-94 Vall 57-58 Maiathah 23-24 Carrie 93-94 Thervan 
-95-96 Von 59-60 Malquis 25-26 Dayereth 95-96 Uthemar 
-97-98 Wil 61-62 Meriele 27-28 Dreali 97-98 Vanuath 
-99-00 Za 63-64 Mialee 29-30 Efferil 99-00 Var is 
+55-56 Mya  
+57-58 Naeris    
+59-60 Naill   
+61-62 Nim    
+63-64 Phann  
+65-66 Py  
+67-68 Rael
+69-70 Raer  
+71-72 Ren  
+73-74 Rinn   
+75-76 Rua    
+77-78 Sael   
+79-80 Sai    
+81-82 Sumi    
+83-84 Syllin    
+85-86 Ta   
+87-88 Thia    
+89-90 Tia   
+91-92 Traki   
+93-94 Vall    
+95-96 Von    
+97-98 Wil   
+99-00 Za   
 
-65-66 Myathethil 31-32 Eiravel 
 
-ELF, FEMALE ADULT 67-68 Naivara 33-34 Enialis ELF, FAMILY 
-dlOO Name 69-70 Quelenna 35-36 Erdan dlOO Name 
-01-02 Adrie 71-72 Quillathe 37-38 Erevan 01-02 Aloro 
-03-04 Ahinar 73-74 Ridaro 39-40 Fivin 03-04 Amakiir 
-05-06 Althaea 75-76 Sari el 41-42 Galinndan 05-06 Amastacia 
-07-08 Anastrianna 77-78 Shanairla 43-44 Gennal 07-08 Ariessus 
-09-10 Andraste 79-80 Shava 45-46 Hadarai 09-10 Arnuanna 
-11-12 Antinua 81-82 Silaqui 47-48 Hali math 11-12 Berevan 
-13-14 Arara 83-84 Sumnes 49-50 Heian 13-14 Caerdonel 
-15-16 Baelitae 85-86 Theirastra 51-52 Hi mo 15-16 Caphaxath / 
-17-18 Bethrynna 87-88 Thiala 53-54 lmmeral 17-18 Casilltenirra 
-19-20 Bi rel 89-90 Tiaathque 55-56 lvellios 19-20 Cithreth ~ 
+
+ELF FEMALE ADULT
+dlOO Name 
+01-02 Adrie   
+03-04 Ahinar    
+05-06 Althaea    
+07-08 Anastrianna    
+09-10 Andraste    
+11-12 Antinua   
+13-14 Arara    
+15-16 Baelitae
+17-18 Bethrynna 
+19-20 Birel
+21-22 Caelynn
+23-24 Chaedi
+25-26 Claira
+27-28 Dara
+29-30 Drusilia
+31-32 Elama
+33-34 Enna
+35-36 Fara
+37-38 Felosial
+39-40 Hatae
+41-42 lelenia
+43-44 llanis
+45-46 lrann
+47-48 Jarsali
+49-50 jelenneth
+51-52 Keyleth
+53-54 Leshanna
+55-56 Lia
+57-58 Maiathah
+59-60 Malquis
+61-62 Meriele
+63-64 Mialee
+65-66 Myathethil
+67-68 Naivara
+69-70 Quelenna
+71-72 Quillathe
+73-74 Ridaro
+75-76 Sariel
+77-78 Shanairla
+79-80 Shava
+81-82 Silaqui
+83-84 Sumnes
+85-86 Theirastra
+87-88 Thiala
+89-90 Tiaathque
 91-92 Traulam 
+93-94 Vadania
+95-96 Valanthe
+97-98 Valna
+99-00 Xanaphia
+
+ELF MALE
+d1oo Name
+01-02 Adran
+03-04 Aelar
+05-06 Aerdeth
+07-08 Ahvain
+09-10 Aramil
+11-12 Arannis
+13-14 Aust
+15-16 Azaki
+17-18 Beiro
+19-20 Berrian
+21-22 Caeldrim
+23-24 Carrie
+25-26 Dayereth
+27-28 Dreali
+29-30 Efferil
+31-32 Eiravel
+33-34 Enialis 
+35-36 Erdan
+37-38 Erevan
+39-40 Fivin
+41-42 Galinndan
+43-44 Gennal
+45-46 Hadarai
+47-48 Hali math
+49-50 Heian
+51-52 Hi mo
+53-54 lmmeral
+55-56 lvellios
+57-58 Korfel
+59-60 Lamlis
+61-62 Laucian
+63-64 Lucan 
+65-66 Mindartis 
+67-68 Naal 
+69-70 Nutae
+71-72 Paelias
+73-74 Peren
+75-76 Quarion 
+77-78 Riardon 
+79-80 Rolen
+81-82 Soveliss
+83-84 Suhnae
+85-86 Thamior
+87-88 Tharivol 
+89-90 Theren
+91-92 Theriatis 
+93-94 Thervan
+95-96 Uthemar
+97-98 Vanuath 
+99-00 Varis  
 
 ELF, FAMILY 
 dlOO Name 
+01-02 Aloro 
+03-04 Amakiir
+05-06 Amastacia
+07-08 Ariessus
+09-10 Arnuanna
+11-12 Berevan 
+13-14 Caerdonel
+15-16 Caphaxath
+17-18 Casilltenirra
+19-20 Cithreth
 21-22 Dalanthan 
 23-24 Eathalena 
 25-26 Erenaeth 
