@@ -8,7 +8,7 @@ class Character:
         self.name = self.getName()
         self.adventuringClass = self.getClass()
         self.stats = self.getStats()
-        self.back = Background(self.name, self.race)
+        self.back = Background(self.name, self.race, self.stats)
 
 
     def getRace(self):
@@ -141,3 +141,6 @@ if __name__ == "__main__":
             print()
     else:
         print(f"{app.back.parents} {app.back.birthplace}\n{app.back.siblings} ")
+
+    print()
+    print(app.back.raised)

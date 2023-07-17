@@ -1,11 +1,13 @@
-import random
+import random, math
 from Sibling import Sibling
 
 class Background:
-    def __init__(self, name, race):
+    def __init__(self, name, race, stats):
         self.name = name
         self.race = race
+        self.stats = stats
         self.parents = self.setParents()
+        self.raised = self.childhood()
         if self.parents != "You do not know who your parents were.":
             self.birthplace = self.setBirthplace()
             self.siblings = self.setSiblings()
@@ -105,8 +107,6 @@ class Background:
 
         s = []
 
-        print(r)
-
         if self.race.lower() == "elf" or self.race.lower() == "dwarf":
             r -= 2
 
@@ -127,5 +127,97 @@ class Background:
 
         return s
 
+    def childhood(self):
+        s = ""
+        family = {
+            tuple(range(1,2)) : "None",
+            tuple(range(2,3)) : "Institution, such as an asylum",
+            tuple(range(3,4)) : "Temple",
+            tuple(range(4,6)) : "Orphanage",
+            tuple(range(6,8)) : "Guardian",
+            tuple(range(8,16)) : "Paternal or maternal aunt, uncle, or both; or extended family such as a tribe or clan",
+            tuple(range(16,26)) : "Paternal or maternal grandparent(s)",
+            tuple(range(26,36)) : "Adoptive family (same or different race)",
+            tuple(range(36,56)) : "Single father or stepfather",
+            tuple(range(56,76)) : "Single mother or stepmother",
+            tuple(range(76,101)) : "Mother and father"
+        }
+
+        familyLifestyle = {
+            tuple(range(3,4)) : ("Wretched", -40),
+            tuple(range(4,6)) : ("Squalid", -20),
+            tuple(range(6,9)) : ("Poor", -10),
+            tuple(range(9,13)) : ("Modest", 0),
+            tuple(range(13,16)) : ("Comfortable", 10),
+            tuple(range(16,18)) : ("Wealthy", 20),
+            tuple(range(18,19)) : ("Aristocratic", 40)
+        }
+
+        childhoodHome = {
+            tuple(range(-40,1)) : "the streets",
+            tuple(range(1,21)) : "Rundown Shack",
+            tuple(range(21,31)) : "No permanent residence; you moved around a lot",
+            tuple(range(31,41)) : "Encampment or village in the wilderness",
+            tuple(range(41,51)) : "Apartment in a rundown neighborhood",
+            tuple(range(51,71)) : "Small house",
+            tuple(range(71,91)) : "Large house",
+            tuple(range(91,111)) : "Mansion",
+            tuple(range(111,152)) : "Palace or castle"
+        }
+
+        childhoodMemories = {
+            tuple(range(-25,4)) : "You are still haunted by your childhood, when you were treated badly by your peers.",
+            tuple(range(4,6)) : "You spent most of your childhood alone, with no close friends.",
+            tuple(range(6,9)) : "Others saw you as being different or strange, and so you had few companions.",
+            tuple(range(9,13)) : "You had few close friends and lived an ordinary childhood.",
+            tuple(range(13,16)) : "You had several friends, and your childhood was generally a happy one.",
+            tuple(range(16,18)) : "You always found it easy to make friends, and loved being around people.",
+            tuple(range(18,25)) : "Everyone knew who you were, and you had friends everywhere you went."
+        }
+
+        roll = random.randint(1,100)
+        
+        for key, value in family.items():
+            if roll in key:
+                s += ("You were raised by a " + value)
+        
+        
+        rolls = []
+
+        for i in range(3):
+            rolls.append(random.randint(1,6))
+        
+        roll = sum(rolls)
+
+        for key,value in familyLifestyle.items():
+            if roll in key:
+                s = s + ". You lived a " + value[0] + " life. "
+                mod = value[1]
+                roll = random.randint(1,100)
+                roll += mod
+
+                for k, v in childhoodHome.items():
+                    if roll in k:
+                        if v == "the streets":
+                            s = s + f"{self.name} grew up in " + v + ". "
+                        else:
+                            s = s + f"{self.name} grew up in a " + v + ". "
+
+        
+        rolls = []
+        for i in range(3):
+            rolls.append(random.randint(1,6))
+        
+        mod = math.floor(((self.stats['Charisma'] - 10) / 2 ))
+
+
+        roll = sum(rolls) + mod 
+
+        for key,value in childhoodMemories.items():
+            if roll in key:
+                s = s + " " + value
+
+        return s
+    
     
     
