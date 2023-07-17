@@ -1,4 +1,5 @@
 import random
+from background import Background
 
 class Character:
     def __init__(self):
@@ -7,6 +8,7 @@ class Character:
         self.name = self.getName()
         self.adventuringClass = self.getClass()
         self.stats = self.getStats()
+        self.back = Background(self.name, self.race)
 
 
     def getRace(self):
@@ -129,3 +131,13 @@ if __name__ == "__main__":
     app = Character()
     print(f"You are {app.name}, a {app.sex.lower()} {app.race.lower()} who is a {app.adventuringClass}!")
     print(app.stats)
+
+    if len(app.back.siblings) != 40:
+        print(f"{app.back.parents} {app.back.birthplace}\n{app.back.name} has {len(app.back.siblings)} siblings.")
+        for sibling in app.back.siblings:
+            print(sibling.name + ": " + sibling.sex + ", " + sibling.age_compared + ", " + sibling.occupation + ", " + sibling.relationship + '\n' + sibling.status)
+            if sibling.status == "Dead":
+                print(f"CAUSE OF DEATH: {sibling.cause_of_death}")
+            print()
+    else:
+        print(f"{app.back.parents} {app.back.birthplace}\n{app.back.siblings} ")
