@@ -1,4 +1,5 @@
 import random
+from DictionaryHolder import DictionaryHolder
 from background import Background
 
 class Character:
@@ -6,6 +7,7 @@ class Character:
         self.race = self.getRace()
         self.sex = self.getSex()
         self.name = self.getName()
+        self.age = self.setAge()
         self.adventuringClass = self.getClass()
         self.stats = self.getStats()
         self.back = Background(self.name, self.race, self.stats)
@@ -13,9 +15,7 @@ class Character:
 
     def getRace(self):
         races = ["Dragonborn", "Dwarf", "Elf", "Gnome", "Halfling", "Half-Orc", "Tiefling", "Human"]
-
         humanRaces = ["Arabic", "Celtic", "Chinese", "Egyptian", "English", "French", "German", "Greek", "Indian", "Japanese", "Mesoamerican", "Niger-Congo", "Norse", "Polynesian", "Roman", "Slavic", "Spanish"]
-
 
         r = random.randint(0, len(races) - 1)
 
@@ -54,31 +54,7 @@ class Character:
     def getStats(self):
         #Define stats and classes most important two stats
         s = ["Strength", "Dexterity", "Constitution", "Intellegence", "Wisdom", "Charisma"]
-        classes_and_stats = {
-            "Fighter" : ["Strength", "Constitution"],
-            "Barbarian" : ["Strength", "Constitution"],
-            "Bard" : ["Wisdom", "Charisma"],
-            "Cleric" : ["Wisdom" , "Constitution"],
-            "Paladin" : ["Strength", "Charisma"],
-            "Druid" : ["Wisdom", "Constitution"],
-            "Ranger" : ["Dexterity", "Wisdom"],
-            "Monk" : ["Dexterity", "Wisdom"],
-            "Rouge" : ["Dexterity", "Charisma"],
-            "Sorcerer" : ["Charisma", "Constitution"],
-            "Warlock" : ["Charisma", "Constitution"],
-            "Wizard" : ["Intellegence", "Dexterity"]
-        }
-
-        races_and_stats = {
-            "dwarf" : [0,0,2,0,0,0],
-            "dragonborn" : [2,0,0,0,0,1],
-            "elf" : [0,2,0,0,0,0],
-            "gnome" : [0,0,0,2,0,0],
-            "halfling" : [0,2,0,0,0,0],
-            "half-orc" : [2,0,1,0,0,0],
-            "tiefling" : [0,0,0,1,0,2]
-        }
-
+        d = DictionaryHolder()
         rolls = []
         statsDict = {}
 
@@ -105,9 +81,9 @@ class Character:
         rolls.pop()
 
         for i in range(len(s)):
-            if i == s.index(classes_and_stats[self.adventuringClass][0]):
+            if i == s.index(d.get_value_from_classes_and_stats(self.adventuringClass)[0]):
                 statsDict[s[i]] = most_importantStat
-            elif i == s.index(classes_and_stats[self.adventuringClass][1]):
+            elif i == s.index(d.get_value_from_classes_and_stats(self.adventuringClass)[1]):
                 statsDict[s[i]] = next_mostImportantStat
             else:
                 statsDict[s[i]] = rolls[random.randint(0,len(rolls) - 1)]
@@ -116,7 +92,7 @@ class Character:
         #Add Racial Bonuses to final stats
         if self.race.lower()[:5] != "human":
             for i in range(6):
-                statsDict[s[i]] = statsDict[s[i]] + races_and_stats[self.race.lower()][i]
+                statsDict[s[i]] = statsDict[s[i]] + d.get_value_from_races_and_stats(self.race.lower())[i]
         else:
             for i in range(6):
                 statsDict[s[i]] += 1
@@ -124,23 +100,47 @@ class Character:
         return statsDict
 
         
+    def setAge(self):
+        age = {
+            "DRAGONBORN" : (15,2,6),
+            "DWARF" : (40,3,6),
+            "ELF" : (110,6,6),
+            "GNOME" : (40,6,6),
+            "HALF-ORC" : (14,1,6),
+            "HALFLING" : (20,3,6),
+            "HUMAN" : (15,1,6),
+            "TIEFLING" : (20,2,6)
+        }
 
+        mult = age[self.race]
+        rolls = []
+
+        for i in range(mult[1]):
+            rolls.append(random.randint(1,mult[2]))
+
+        return mult[0] + sum(rolls)
         
 
 if __name__ == "__main__":
     app = Character()
     print(f"You are {app.name}, a {app.sex.lower()} {app.race.lower()} who is a {app.adventuringClass}!")
-    print(app.stats)
+    print()
 
+    for key, value in app.stats.items():
+        print(f"{key}: {value}")
+
+    print()
     if len(app.back.siblings) != 40:
-        print(f"{app.back.parents} {app.back.birthplace}\n{app.back.name} has {len(app.back.siblings)} siblings.")
+        print(f"{app.back.parents} {app.back.birthplace}\n{app.back.name} has {len(app.back.siblings)} siblings.\n")
         for sibling in app.back.siblings:
-            print(sibling.name + ": " + sibling.sex + ", " + sibling.age_compared + ", " + sibling.occupation + ", " + sibling.relationship + '\n' + sibling.status)
+            print("\t" + sibling.name + ": " + sibling.sex + ", " + sibling.age_compared + ", " + sibling.occupation + ", " + sibling.relationship + '\n\t\t' + sibling.status)
             if sibling.status == "Dead":
-                print(f"CAUSE OF DEATH: {sibling.cause_of_death}")
+                print(f"\t\tCAUSE OF DEATH: {sibling.cause_of_death}")
             print()
     else:
         print(f"{app.back.parents} {app.back.birthplace}\n{app.back.siblings} ")
 
     print()
     print(app.back.raised)
+
+    print(f"AGE: {app.age}")

@@ -1,4 +1,5 @@
 import random, math
+from DictionaryHolder import DictionaryHolder
 from Sibling import Sibling
 
 class Background:
@@ -8,6 +9,7 @@ class Background:
         self.stats = stats
         self.parents = self.setParents()
         self.raised = self.childhood()
+        self.d = DictionaryHolder()
         if self.parents != "You do not know who your parents were.":
             self.birthplace = self.setBirthplace()
             self.siblings = self.setSiblings()
@@ -69,38 +71,11 @@ class Background:
             
                 
     def setBirthplace(self):
-        birthplace = {
-            tuple(range(1,51))   : f"{self.name} was born at home",
-            tuple(range(51,56))   : f"{self.name} was born at the home of a family friend",
-            tuple(range(56,64))   : f"{self.name} was born in the home of a healer or midwife",
-            tuple(range(64,66))   : f"{self.name} was born in a carriage cart or wagon",
-            tuple(range(66,69))   : f"{self.name} was born in a barn shed or other outbuilding",
-            tuple(range(69,71))   : f"{self.name} was born in a cave",
-            tuple(range(71,73))   : f"{self.name} was born in a field",
-            tuple(range(73,75))   : f"{self.name} was born in a forest",
-            tuple(range(75,78))   : f"{self.name} was born in a temple",
-            tuple(range(78,79))   : f"{self.name} was born on a battlefield",
-            tuple(range(79,81))   : f"{self.name} was born in a alley or the street",
-            tuple(range(81,83))   : f"{self.name} was born in a brothel tavern or inn",
-            tuple(range(83,85))   : f"{self.name} was born in a castle keep tower or palace",
-            tuple(range(85,86))   : f"{self.name} was born in a sewer or rubbish heap",
-            tuple(range(86,89))   : f"{self.name} was born among people of a different race",
-            tuple(range(89,92))   : f"{self.name} was born onboard a boat or a ship",
-            tuple(range(92,94))   : f"{self.name} was born in a prison or in the headquarters of a secret organization",
-            tuple(range(94,96))   : f"{self.name} was born in a sages library",
-            tuple(range(96,97))   : f"{self.name} was born in the Feywild",
-            tuple(range(97,98))   : f"{self.name} was born in the Shadowfell",
-            tuple(range(98,99))   : f"{self.name} was born on the Astral Plane or the Ethereal Plane",
-            tuple(range(99,100))   : f"{self.name} was born on an Inner Plane of your choice",
-            tuple(range(100,101))   : f"{self.name} was born on an Outer Plane of your choice"
-        }
-
         r = random.randint(1,100)
 
-        for key, value in birthplace.items():
-            if r in key:
-                return value
+        return f"{self.name}{self.d.get_value_from_birthplace(r)}"
 
+        
     def setSiblings(self):
         r = random.randint(1,10)
         siblings = 0
