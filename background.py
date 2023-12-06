@@ -105,8 +105,6 @@ class Background:
 
         s = []
 
-        print(r)
-
         if self.race.lower() == "elf" or self.race.lower() == "dwarf":
             r -= 2
 
