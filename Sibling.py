@@ -13,7 +13,7 @@ class Sibling:
             self.cause_of_death = self.setCauseOfDeath()
     
     def getName(self):
-        fileName = f"RaceNames\{self.race}, {self.sex} .csv"
+        fileName = f"RaceNames/{self.race}, {self.sex} .csv"
         r = random.randint(3,51)
 
         with open(fileName, 'r') as f:

@@ -26,7 +26,7 @@ class Character:
             return races[r].upper()
         
     def getName(self):
-        fileName = f"RaceNames\{self.race}, {self.sex} .csv"
+        fileName = f"RaceNames/{self.race}, {self.sex} .csv"
         r = random.randint(3,51)
 
         with open(fileName, 'r') as f:
